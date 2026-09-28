@@ -1,0 +1,6 @@
+# WO's IRATI — Industrial Robotics Automation & Training Institute
+User-agent: *
+Allow: /
+Disallow: /build/
+
+Sitemap: https://irati.co.in/sitemap.xml
