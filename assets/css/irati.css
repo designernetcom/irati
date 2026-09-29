@@ -402,7 +402,10 @@ header.sticky-active.irt-header {
   pointer-events: none;
 }
 
-.irt-hero .hero-info { position: relative; z-index: 1; }
+.irt-hero .hero-info { 
+  position: relative; 
+  /* z-index: 1;  */
+}
 
 .irt-hero .hero-title .sub-title {
   display: inline-block;
