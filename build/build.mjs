@@ -285,13 +285,13 @@ for (const c of courses) {
 }
 
 await add({
-  file: 'industries.html',
+  file: 'industrial-robotics-automation-and-training.html',
   active: 'industries',
   title: "Industries We Serve | Robotics Automation by WO's IRATI",
   description:
     'Robotic automation for automotive, manufacturing, welding and fabrication, packaging and logistics, aerospace, forging, metal and machining industries across India.',
   image: 'factory-automation.webp',
-  schema: [ORG, breadcrumbSchema([{ name: 'Industries', url: u('industries.html') }])],
+  schema: [ORG, breadcrumbSchema([{ name: 'Industries', url: u('industrial-robotics-automation-and-training.html') }])],
   body: P.industriesPage(),
   extraScripts: ['assets/js/vendor/isotope.pkgd.min.js', 'assets/js/vendor/imagesloaded.pkgd.min.js'],
 });

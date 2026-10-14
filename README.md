@@ -44,7 +44,7 @@ build/
 Generated files (do not hand-edit — the next build overwrites them):
 
 ```
-index.html  about.html  solutions.html  training.html  industries.html
+index.html  about.html  solutions.html  training.html  industrial-robotics-automation-and-training.html
 projects.html  blog.html  contact.html  404.html
 training/{operators,supervisors,robot-programmers,robotic-engineers,
           college-students,entrepreneurs}.html

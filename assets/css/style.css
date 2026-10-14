@@ -1453,8 +1453,8 @@ textarea:-ms-input-placeholder {
   z-index: 100;
   border: none;
   outline: none;
-  background-color: var(--color-primary);
-  color: var(--color-heading);
+  background: linear-gradient(150deg, #193453 0%, #146e99e3 100%);
+  color: #fff;
   cursor: pointer;
   border-radius: 15px;
   z-index: 9999999;
@@ -5634,7 +5634,7 @@ body ul {
 }
 body a {
   text-decoration: none;
-  color: inherit;
+  color: #d0e1f2;
 }
 
 h1,
@@ -5809,7 +5809,7 @@ p {
   font-size: var(--font-size-b2);
   font-family: var(--font-secondary);
   line-height: 1.7;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: var(--f-regular);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5913,7 +5913,7 @@ li {
 }
 
 li::marker {
-  color: var(--color-body);
+  color: #6e8194;
 }
 
 ul {
@@ -10552,7 +10552,7 @@ input[type=submit]:hover {
   line-height: 24px;
   display: inline-block;
   margin-bottom: 0;
-  color: #BEBEBE;
+  color: #fff;
 }
 .footer-box p a,
 .footer-box span a {
@@ -12546,9 +12546,15 @@ ul {
   mask-composite: exclude;
 }
 .ibt-btn.ibt-btn-outline::after {
-  background: var(--gradient-btn-1);
+  background: linear-gradient(95deg, #193453 0%, #146e99e3 100%);
+  color: #fff;
   opacity: 0;
 }
+
+.irt-cta-actions.ibt-btn-outline:after span{
+  color: #fff !important;
+}
+
 .ibt-btn.ibt-btn-outline > * {
   position: relative;
   z-index: 1;
@@ -34988,7 +34994,7 @@ blockquote {
   transition: all 0.3s ease;
 }
 .menu_iso li a:hover {
-  color: #00a3e0 !important;
+  color: #237091 !important;
 }
 .menu_iso li a:hover::before {
   width: 100%;
@@ -39604,4 +39610,232 @@ blockquote {
 :is(.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands,.fa-classic,.fa):before {
     font-size: 20px;
     /* font-weight: 800 !important; */
+}
+
+
+.space-1{
+  padding: 10px;
+}
+
+
+
+
+/* Section Wrapper & Background */
+.custom-irt-section {
+    background: linear-gradient(120deg, #0b2e4d 0%, #0d2036 55%, #081420 100%);
+    padding: 80px 20px;
+    color: #ffffff;
+    font-family: inherit;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    margin: 0 20px 20px;
+}
+
+.custom-irt-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid Layout */
+.custom-irt-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.custom-irt-col-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.custom-irt-col-right {
+    flex: 1.1;
+    min-width: 320px;
+}
+
+/* Left Content Styles */
+.custom-irt-banner-content .custom-irt-title {
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.custom-irt-subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* Form Box Background & Styling */
+.custom-irt-form-wrap {
+    background: #ffffff;
+    color: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.custom-irt-form h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.custom-irt-form-lead {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 24px;
+}
+
+.custom-irt-req {
+    color: #ef4444;
+}
+
+/* Field Layout */
+.custom-irt-field {
+    margin-bottom: 20px;
+}
+
+.custom-irt-field label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.custom-irt-field input,
+.custom-irt-field select,
+.custom-irt-field textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #0f172a;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.custom-irt-field input:focus,
+.custom-irt-field select:focus,
+.custom-irt-field textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Inner Rows for Side-by-Side inputs */
+.custom-irt-row-inner {
+    display: flex;
+    gap: 16px;
+}
+
+.custom-irt-col-half {
+    flex: 1;
+}
+
+/* Submit Button */
+.custom-irt-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.custom-irt-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer Notes & Success message */
+.custom-irt-form-success {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #dcfce7;
+    color: #166534;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.custom-irt-form-note {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.custom-irt-form-note a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.custom-irt-form-note a:hover {
+    text-decoration: underline;
+}
+
+.custom-irt-error {
+    font-size: 0.8rem;
+    color: #ef4444;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+    .custom-irt-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .custom-irt-col-left, .custom-irt-col-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-irt-row-inner {
+        flex-direction: column;
+        gap: 0;
+    }
+    .custom-irt-form-wrap {
+        padding: 24px;
+    }
+    .custom-irt-section {
+        padding: 40px 15px;
+    }
+}
+
+
+
+
+
+.bg-white {
+  background: #fff;
+}
+
+.colour-black {
+  color: #0b1f33 !important;
+}
+
+.color-grey {
+  color: #5a6b7c !important;
+}
+
+.irt-card {
+  background: linear-gradient(120deg, #0b2e4d 0%, #0d2036 55%, #081420 100%) !important;
 }

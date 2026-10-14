@@ -205,7 +205,7 @@ ${
   full
     ? ''
     : `                <div class="irt-section-action">
-                    ${btn(`${r}industries.html`, 'Explore Industries')}
+                    ${btn(`${r}industrial-robotics-automation-and-training.html`, 'Explore Industries')}
                 </div>`
 }
             </div>

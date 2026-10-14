@@ -25,7 +25,7 @@ const NAV = [
     key: 'training',
     children: courses.map((c) => ({ href: c.file, label: c.nav })),
   },
-  { href: 'industries.html', label: 'Industries', key: 'industries' },
+  { href: 'industrial-robotics-automation-and-training.html', label: 'Industries', key: 'industries' },
   { href: 'projects.html', label: 'Projects', key: 'projects' },
   { href: 'blog.html', label: 'Blog', key: 'blog' },
   { href: 'contact.html', label: 'Contact', key: 'contact' },
