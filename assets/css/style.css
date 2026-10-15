@@ -40481,3 +40481,446 @@ blockquote {
 .robotic-img img {
     min-height: 240px;
 }
+
+
+
+
+
+
+/* ================================
+   Industrial Robotics Course Slider
+================================ */
+
+.robot-plans {
+    --rp-bg: linear-gradient(120deg, #0b2e4d 0%, #0d2036 55%, #081420 100%);
+    --rp-text: #ffffff;
+    --rp-muted: rgba(255, 255, 255, 0.82);
+
+    position: relative;
+    overflow: hidden;
+    padding: 85px 0 75px;
+    background: var(--rp-bg);
+    color: var(--rp-text);
+}
+
+.robot-plans,
+.robot-plans * {
+    box-sizing: border-box;
+}
+
+.robot-plans__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+.robot-plans__heading {
+    margin-bottom: 35px;
+}
+
+.robot-plans__eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #ff9933;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.robot-plans__heading-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.robot-plans__heading h2 {
+    max-width: 600px;
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(34px, 4.2vw, 52px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+}
+
+.robot-plans__heading > p {
+    margin: 16px 0 0;
+    color: #c8c8c8;
+    font-size: -15px;
+    line-height: 1.7;
+}
+
+/* Navigation arrows */
+
+.robot-plans__navigation {
+    display: flex;
+    flex-shrink: 0;
+    gap: 10px;
+    padding-bottom: 4px;
+}
+
+.robot-plans__arrow {
+    display: flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff9933;
+    border-radius: 50%;
+    background: transparent;
+    color: #ff9933;
+    font-size: 23px;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.robot-plans__arrow:hover {
+    border-color: #ff9933;
+    background: #ff9933;
+    color: #1d1d1d;
+}
+
+.robot-plans__arrow:focus-visible,
+.robot-plans__button:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+/* Slider */
+
+.robot-plans__viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.robot-plans__track {
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+    transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+/* Course cards */
+
+.robot-plans__card {
+    position: relative;
+    display: flex;
+    flex: 0 0 calc((100% - 36px) / 3);
+    min-width: 0;
+    min-height: 440px;
+    padding: 32px 27px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 22px;
+    color: #ffffff;
+}
+
+.robot-plans__card--dark {
+    background: linear-gradient(136deg, #ff7f33, #ff9933, #c38e59);
+    border-color: #393939;
+}
+
+.robot-plans__card--purple {
+    background: linear-gradient(136deg, #ad8bdd, #b7b7b7fa);
+    border-color: transparent;
+}
+
+.robot-plans__card--teal {
+    background: linear-gradient(136deg, #43c4b0, #b7b7b7fa);
+    border-color: transparent;
+}
+
+.robot-plans__card--blue {
+    background: linear-gradient(136deg, #527fc2, #b7b7b7fa);
+    border-color: transparent;
+}
+
+.robot-plans__card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 0;
+}
+
+.robot-plans__audience {
+    display: block;
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.robot-plans__card h3 {
+    margin: 0 0 14px;
+    color: #ffffff;
+    font-size: clamp(23px, 2vw, 30px);
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.7px;
+}
+
+.robot-plans__description {
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.robot-plans__features {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 100%;
+    margin: 0 0 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.robot-plans__features li {
+    position: relative;
+    padding-left: 13px;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.robot-plans__features li::before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    content: "";
+}
+
+.robot-plans__price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 5px;
+    margin-top: auto;
+    margin-bottom: 21px;
+    color: #ffffff;
+}
+
+.robot-plans__price strong {
+    font-size: clamp(32px, 3vw, 43px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.robot-plans__price span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.robot-plans__price--custom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.robot-plans__price--custom strong {
+    font-size: 30px;
+}
+
+.robot-plans__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.robot-plans__button {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.25s ease, color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.robot-plans__button--outline {
+    border-color: rgba(255, 255, 255, 0.65);
+    background: transparent;
+}
+
+.robot-plans__button--outline:hover {
+    border-color: #ffffff;
+    background: #ffffff;
+    color: #202020;
+}
+
+.robot-plans__button--filled {
+    background: #202020;
+    color: #ffffff;
+}
+
+.robot-plans__button--filled:hover {
+    background: #ffffff;
+    color: #202020;
+}
+
+.robot-plans__card--dark .robot-plans__button--outline {
+    border-color: #527fc2;
+}
+
+.robot-plans__card--dark .robot-plans__button--outline:hover {
+    border-color: #527fc2;
+    background: #527fc2;
+    color: #ffffff;
+}
+
+/* Popular label */
+
+.robot-plans__popular {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 2;
+    padding: 8px 25px;
+    border-radius: 0 0 14px 14px;
+    background: #202020;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.robot-plans__card:has(.robot-plans__popular) {
+    padding-top: 48px;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+    .robot-plans {
+        padding: 70px 0 60px;
+    }
+
+    .robot-plans__container {
+        padding: 0 25px;
+    }
+
+    .robot-plans__card {
+        flex-basis: calc((100% - 18px) / 2);
+        min-height: 440px;
+        padding: 28px 23px;
+    }
+
+    .robot-plans__card:has(.robot-plans__popular) {
+        padding-top: 48px;
+    }
+
+    .robot-plans__card h3 {
+        font-size: 25px;
+    }
+
+    .robot-plans__price strong {
+        font-size: 36px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 575px) {
+    .robot-plans {
+        padding: 55px 0 45px;
+    }
+
+    .robot-plans__container {
+        padding: 0 18px;
+    }
+
+    .robot-plans__heading {
+        margin-bottom: 25px;
+    }
+
+    .robot-plans__heading-row {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .robot-plans__heading h2 {
+        font-size: 35px;
+        letter-spacing: -1.2px;
+    }
+
+    .robot-plans__heading > p {
+        max-width: 300px;
+        font-size: 13px;
+    }
+
+    .robot-plans__navigation {
+        gap: 6px;
+    }
+
+    .robot-plans__arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 19px;
+    }
+
+    .robot-plans__track {
+        gap: 14px;
+    }
+
+    .robot-plans__card {
+        flex-basis: 100%;
+        min-height: 420px;
+        padding: 28px 24px;
+        border-radius: 19px;
+    }
+
+    .robot-plans__card:has(.robot-plans__popular) {
+        padding-top: 48px;
+    }
+
+    .robot-plans__card h3 {
+        font-size: 27px;
+    }
+
+    .robot-plans__description {
+        font-size: 13px;
+    }
+
+    .robot-plans__price strong {
+        font-size: 39px;
+    }
+
+    .robot-plans__button {
+        padding: 12px 13px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .robot-plans__track,
+    .robot-plans__button,
+    .robot-plans__arrow {
+        transition: none;
+    }
+}
