@@ -891,6 +891,7 @@ header.sticky-active.irt-header {
 
 .irt-why {
   background: linear-gradient(120deg, #0b2e4d 0%, #0d2036 55%, #081420 100%);
+  margin-bottom: 10px;
 }
 
 .irt-why-card {
@@ -2617,6 +2618,7 @@ color: #237091;
 }
 
 @media (max-width: 575px) {
+  .irt-footer-menu { grid-template-columns: repeat(1, minmax(0, 1fr)); margin-top: 40px; }
   .ibt-section-gap { padding-top: 56px; padding-bottom: 56px; }
   .ibt-section-gapTop { padding-top: 56px; }
   .ibt-section-gapBottom { padding-bottom: 56px; }
@@ -2740,7 +2742,7 @@ color: #237091;
   background-image: none;
   background: radial-gradient(80% 120% at 15% 0%, rgba(0, 163, 224, .22) 0%, rgba(0, 163, 224, 0) 60%);
   top: 0;
-  height: 60%;
+  /* height: 60%; */
   z-index: 0;
 }
 

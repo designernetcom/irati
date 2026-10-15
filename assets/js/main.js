@@ -153,12 +153,40 @@ var SideMenu2 = {
       });
 
       // Side menu list item toggle
-      var sideMenuItems = document.querySelectorAll(".side-menu2 > ul > li");
-      sideMenuItems.forEach(function (item) {
-        item.addEventListener("click", function () {
-          this.classList.toggle("active");
+      // var sideMenuItems = document.querySelectorAll(".side-menu2 > ul > li");
+      // sideMenuItems.forEach(function (item) {
+      //   item.addEventListener("click", function () {
+      //     this.classList.toggle("active");
+      //   });
+      // });
+
+
+// Side menu list item toggle
+var sideMenuItems = document.querySelectorAll(
+    ".side-menu2 > ul > li"
+);
+
+sideMenuItems.forEach(function (item) {
+    var directLink = Array.from(item.children).find(function (child) {
+        return child.tagName === "A";
+    });
+
+    var subMenu = Array.from(item.children).find(function (child) {
+        return child.tagName === "UL";
+    });
+
+    // Only toggle items that have a submenu
+    if (directLink && subMenu) {
+        directLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            item.classList.toggle("active");
+            subMenu.classList.toggle("active");
         });
-      });
+    }
+});
+
 
       var sideSubMenus = document.querySelectorAll(".side-menu2 .sub-menu");
       sideSubMenus.forEach(function (subMenu) {
