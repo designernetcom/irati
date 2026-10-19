@@ -1810,7 +1810,7 @@ textarea:-ms-input-placeholder {
 ==========================*/
 .ibt-section-gap {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ibt-section-gap {
@@ -1914,6 +1914,7 @@ textarea:-ms-input-placeholder {
 
 .ibt-section-gapTop {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ibt-section-gapTop {
@@ -10524,6 +10525,7 @@ input[type="submit"]:hover {
 .widget-area {
   position: relative;
   z-index: 99;
+  padding-top: 60px;
 }
 
 .about-widget {
@@ -28999,6 +29001,7 @@ ul {
  */
 .blog-sec {
   position: relative;
+  padding-bottom: 50px;
 }
 @media (max-width: 1201px) {
   .blog-sec {
@@ -38452,6 +38455,7 @@ blockquote {
 
 .contact-sec {
   position: relative;
+  padding-bottom: 30px;
 }
 @media (max-width: 1440px) {
   .contact-sec {
@@ -40922,5 +40926,87 @@ blockquote {
     .robot-plans__button,
     .robot-plans__arrow {
         transition: none;
+    }
+}
+
+
+
+
+
+
+/* Course card layout */
+.irt-training .irt-course-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Responsive course images */
+.irt-training .irt-course-image {
+    width: 100%;
+    height: 245px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.irt-training .irt-course-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.irt-training .irt-course-card:hover .irt-course-image img {
+    transform: scale(1.04);
+}
+
+/* Card content */
+.irt-training .irt-course-head {
+    padding-top: 20px;
+}
+
+.irt-training .irt-course-meta {
+    margin-top: auto;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .irt-training .irt-course-image {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .irt-training .irt-course-card {
+        margin-bottom: 25px;
+    }
+
+    .irt-training .irt-course-image {
+        aspect-ratio: 16 / 9;
+    }
+
+    .irt-training .irt-course-head {
+        padding: 16px 0 0;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .irt-training .irt-course-image {
+        aspect-ratio: 4 / 3;
+    }
+
+    .irt-training .irt-course-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .irt-training .irt-course-actions a {
+        max-width: 100%;
     }
 }

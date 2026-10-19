@@ -2491,7 +2491,10 @@ color: #237091;
 
 .irt-footer-wrap { background: var(--irt-navy-3); }
 
-.irt-footer { background: transparent; }
+.irt-footer { 
+  background: transparent;
+  background: linear-gradient(160deg, rgb(0 240 255 / 70%) 0%, rgb(11 34 49 / 71%) 42%, rgb(14 47 77) 100%); 
+}
 
 .irt-footer .footer-top {
   padding: 60px 0;
@@ -2524,8 +2527,8 @@ color: #237091;
 
 .irt-footer .footer-logo { margin-bottom: 20px; }
 .irt-footer .footer-logo .irt-logo img { 
-  width: 60px;
-  height: 60px;
+  width: 130px;
+  height: 130px;
   flex-basis: 58px; 
 }
 .irt-footer .irt-logo-sub { display: block; }
@@ -3365,4 +3368,34 @@ color: #237091;
 .irt-body textarea:disabled,
 .irt-body [aria-disabled="true"] {
   cursor: not-allowed;
+}
+
+
+
+
+
+.irt-about-img-page video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+
+
+.irt-app-video {
+    display: block;
+    width: 100%;
+    /* height: 220px; */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.irt-app-card .title {
+    margin-top: 15px;
+    margin-bottom: 0;
+    /* text-align: center; */
 }

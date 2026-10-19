@@ -105,10 +105,10 @@ const logo = (depth, variant = '') => {
   const r = rel(depth);
   return `<a class="irt-logo${variant}" href="${r}index.html" aria-label="${brand.name} — home">
                                 <img src="${r}assets/images/irati/irati-mark.webp" width="209" height="166" alt="${brand.name} logo">
-                                <span class="irt-logo-text">
+                                <!-- <span class="irt-logo-text">
                                     <span class="irt-logo-name">WO&rsquo;s IRATI</span>
                                     <span class="irt-logo-sub">Industrial Robotics Automation &amp; Training Institute</span>
-                                </span>
+                                </span> -->
                             </a>`;
 };
 
